@@ -13,7 +13,6 @@ const Footer = () => {
                         <Link to="/contact">Ofertas Especiales y Descuentos</Link>
                         <Link to="/contact">Regala Belleza con Nuestras Tarjetas</Link>
                         <Link to="/contact">Mis Servicios de Manicura</Link>
-
                     </section>
                 </div>
                 <div className="container-info">
