@@ -1,14 +1,55 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: rgb(7, 4, 5);
+    --backgroundMain: rgb(250, 245, 247);
+    --primary: rgb(192, 86, 120);
+    --secondary: rgb(224, 152, 175);
+    --accent: rgb(219, 106, 142);
+    --backgroundfooter: rgba(15, 23, 33, 0.05);
+  }
+}
+
+/*https://www.realtimecolors.com/?colors=070405-faf5f7-c05678-e098af-db6a8e&fonts=Poppins-Poppins*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: rgb(251, 249, 249);
+    ---backgroundMain: rgb(10, 5, 7);
+    --primary: rgb(230, 118, 153);
+    --secondary: rgb(102, 30, 53);
+    --accent: rgb(242, 53, 113);
+    --backgroundfooter: hsl(218, 35%, 94%, 5%)
+  }
+}
+
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", "Noto Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text);
+  background-color: var(--backgroundMain);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Personalizar la barra de desplazamiento */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
 }
