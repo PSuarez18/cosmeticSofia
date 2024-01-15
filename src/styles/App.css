@@ -1,0 +1,45 @@
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  position: fixed;
+  height: 10%;
+  width: 100%;
+}
+
+main {
+  position: absolute;
+  top: 10vh;
+  height: 75%;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  top: 85vh;
+  height: 15%;
+  width: 100%;
+  overflow: visible;
+}
