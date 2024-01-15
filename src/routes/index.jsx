@@ -7,7 +7,7 @@ const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" />
+        <Route path="/"  element={<NavBar/>}/>
        
       </Routes>
     </Router>
