@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <AppRoutes />
-
+      
       </div>
     </>
   )

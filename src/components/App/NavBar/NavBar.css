@@ -1,0 +1,35 @@
+
+
+nav {
+    font-family: 'Arial', sans-serif;
+    height: 90px;
+    background-color: rgb(229, 221, 200);
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro del nav */
+    justify-content: center;
+    border: solid 0.5px black;
+  }
+  
+  ul {
+    list-style: none; /* Esto quitará los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Estilo para los enlaces */
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  a:hover {
+    color: #555;
+  }
