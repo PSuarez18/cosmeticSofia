@@ -20,8 +20,6 @@ const SectionSkills = () => {
                     </div>
                 </div>
             </section>
-
-
         </div>
     )
 }
