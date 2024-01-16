@@ -1,4 +1,5 @@
 import Footer from "../components/Footer/Footer";
+import SectionExperience from "../components/SectionLoopExperience/SectionExperience";
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
 
             </header>
             <main>
+                <SectionExperience/>
 
             </main>
             <footer>
