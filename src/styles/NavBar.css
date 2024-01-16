@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+  
 }
 
 .navbar-list {
@@ -13,7 +14,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center; /* Centra los elementos en la barra de navegación */
+  justify-content: space-between; /* Centra los elementos en la barra de navegación */
 
 }
 

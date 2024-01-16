@@ -1,5 +1,6 @@
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
+import SectionPrincipal from "../components/SectionPrincipal/SectionPrincipal";
 
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
 
             </header>
             <main>
-
+            <SectionPrincipal/>
             </main>
             <footer>
                 <Footer />
