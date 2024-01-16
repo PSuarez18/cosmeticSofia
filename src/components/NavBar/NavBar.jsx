@@ -5,25 +5,26 @@ import '../../styles/NavBar.css'
 const NavBar = () => {
   return (
     <nav className='navbar'>
-      <ul>
-        <li>
-          <Link to="/">Inicio</Link>
+      <ul className='navbar-list'>
+        <li className='navbar-item'>
+          <Link to="/" className='navbar-link'>Inicio</Link>
         </li>
-        <li>
-          <Link to="/servicios">Servicios</Link>
+        <li className='navbar-item'>
+          <Link to="/servicios" className='navbar-link'>Servicios</Link>
         </li>
-        <li>
-          <Link to="/cursos">Cursos</Link>
+        <li className='navbar-item'>
+          <Link to="/cursos" className='navbar-link'>Cursos</Link>
         </li>
-        <li>
-          <Link to="/blog">Blog</Link>
+        <li className='navbar-item'>
+          <Link to="/blog" className='navbar-link'>Blog</Link>
         </li>
-        <li>
-          <Link to="/contacto">Contacto</Link>
+        <li className='navbar-item'>
+          <Link to="/contacto" className='navbar-link'>Contacto</Link>
         </li>
       </ul>
     </nav>
   )
 }
+
 
 export default NavBar

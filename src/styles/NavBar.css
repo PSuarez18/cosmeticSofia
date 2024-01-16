@@ -1,35 +1,43 @@
+.navbar {
+  font-family: "Poppins", "Noto Sans", sans-serif;
+  height: 90px;
+  background-color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
 
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centra los elementos en la barra de navegación */
 
-nav {
-    font-family: 'Arial', sans-serif;
-    height: 90px;
-    background-color: rgb(229, 221, 200);
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos dentro del nav */
-    justify-content: center;
-    border: solid 0.5px black;
+}
+
+.navbar-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.125rem;
+   /* Media query para pantallas más pequeñas (tablets) */
+   @media screen and (max-width: 768px) {
+    font-size: 1rem; /* Ajusta según tus necesidades */
   }
-  
-  ul {
-    list-style: none; /* Esto quitará los puntos de la lista */
-    padding: 0;
-    margin: 0;
-    display: flex;
+
+  /* Media query para pantallas aún más pequeñas (teléfonos) */
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem; /* Ajusta según tus necesidades */
   }
-  
-  li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  /* Estilo para los enlaces */
-  a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  a:hover {
-    color: #555;
-  }
+}
+
+.navbar-link:hover {
+  color: #555;
+}
