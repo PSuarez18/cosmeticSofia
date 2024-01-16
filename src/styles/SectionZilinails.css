@@ -63,8 +63,9 @@
     align-items: center;
     padding: 20px 40px;
     font-weight: 700;
-    transition: all .2s;
+    transition: all 0.8s;
     display: inline-block;
+    text-decoration: none;
 }
 
 .primary-button:hover {
@@ -86,27 +87,17 @@
     padding: 20px 40px;
     font-size: 16px;
     font-weight: 700;
-    transition: all .3s;
+    transition: all 0.8s;
     display: inline-block;
-}
-
-a {
-    color: var(--text);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    align-items: center;
-    font-weight: 700;
     line-height: 1.2em;
     text-decoration: none;
-    transition: color .3s;
 }
 
-a:hover {
-    color: var(--primary);
-}
 
-a:active,
-a:hover {
+
+
+.primary-button:active,
+.primary-button:hover {
     outline: 0;
 }
 
@@ -125,7 +116,8 @@ a:hover {
 
 @media screen and (max-width: 479px) {
     .button-wrap.center-tablet {
-        flex-direction: column;
+        flex-direction: column !important;
+        align-items: center;
     }
 }
 
@@ -221,11 +213,8 @@ a:hover {
     letter-spacing: 1px;
     font-size: 22px;
     line-height: 1.5em;
-}
-
-p {
     text-transform: none;
     margin-top: 10px;
     margin-bottom: 10px;
-    line-height: 1.5em;
 }
+

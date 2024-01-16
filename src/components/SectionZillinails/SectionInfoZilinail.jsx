@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../styles/SectionZilinails.css";
 
 const SectionZillinails = () => {
@@ -21,10 +22,10 @@ const SectionZillinails = () => {
                             <br />
                             De Sofia Zilli.
                         </p>
-                        
+
                         <div className="button-wrap center-tablet">
-                            <a href="/catalogo" className="primary-button">Catalogo</a>
-                            <a href="/about-me" className="primary-button-border">Acerca de Mi</a>
+                            <Link href="/catalogo" className="primary-button">Catalogo</Link>
+                            <Link href="/about-me" className="primary-button-border">Acerca de Mi</Link>
                         </div>
                     </div>
                 </div>
