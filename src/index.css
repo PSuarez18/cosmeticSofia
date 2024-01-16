@@ -6,6 +6,9 @@
     --secondary: rgb(224, 152, 175);
     --accent: rgb(219, 106, 142);
     --backgroundfooter: rgba(15, 23, 33, 0.05);
+    --white: white;
+    --sectionLoopBackground:  rgb(46, 43, 41);
+
   }
 }
 
