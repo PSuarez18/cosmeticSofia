@@ -5,13 +5,14 @@ import fondoDeUñas from '../../assets/images/fondoDeUñas.jpg';
 
 const SectionPrincipal = () => {
   return (
-    <div className='section'>
+    <div className='section2'>
         <div className='informacion'>
           <div className='bloqueInfo'>
             <h1>Las mejores uñas para los mejores momentos</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, tempore quas delectus pariatur eveniet totam ex aut unde corrupti!</p>
             <div className='botones'>
-                <a href="" className='boton'><span className='span'>Reservar ahora</span></a> <a href="" className='otro-boton'><span className='span'>Ver todos los servicios</span></a>
+                <a href="" className='primary-button'>Reservar ahora</a> 
+                <a href="" className='primary-button-border'>Ver todos los servicios</a>
             </div>
 
           </div>

@@ -1,4 +1,4 @@
-.section{
+.section2{
     height: 100%;
     width: 100%; /* Puedes ajustar el ancho según tus necesidades */
     overflow: hidden; 
@@ -32,7 +32,6 @@
     margin-top:7%;
     margin-left:1%;
     font-size: 20px;
-    font-family: Nunito, sans-serif;
     letter-spacing: 1px;
     color: rgb(85, 85, 85);
 }
@@ -43,7 +42,6 @@
 .informacion h1{
     margin-bottom: 15px; /* Espacio entre cada elemento */
     font-size: 55px;
-    font-family: Rufina, serif;
 }
 .botones {
    
