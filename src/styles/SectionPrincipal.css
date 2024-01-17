@@ -1,4 +1,6 @@
 .section2{
+    height: 100%;
+    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
     overflow: hidden; 
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas, una para la información y otra para el carrusel */
@@ -109,6 +111,7 @@
     border-radius: 2%;
     z-index: 1;
     position: relative;
+   
 }
 
 .indicadores {

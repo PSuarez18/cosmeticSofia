@@ -5,6 +5,9 @@ import '../../styles/NavBar.css'
 const NavBar = () => {
   return (
     <nav className='navbar'>
+      <div className='container-logoNails'>
+        <a href="/"><img src="src\assets\images\nailsLogo.png" alt="" /></a>
+      </div>
       <ul className='navbar-list'>
         <li className='navbar-item'>
           <Link to="/" className='navbar-link'>Inicio</Link>
@@ -22,6 +25,9 @@ const NavBar = () => {
           <Link to="/contacto" className='navbar-link'><span>Contacto</span></Link>
         </li>
       </ul>
+      <div className='container-logoMarket'>
+        <a href="/"><img className="logoMarket" src="src\assets\images\logoMarket.png" alt="" /></a>
+      </div>
     </nav>
   )
 }

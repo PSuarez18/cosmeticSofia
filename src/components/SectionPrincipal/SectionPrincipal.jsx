@@ -40,7 +40,8 @@ const SectionPrincipal = () => {
             <h1>Las Mejores Uñas Para Los Mejores Momentos</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, tempore quas delectus pariatur eveniet totam ex aut unde corrupti!</p>
             <div className='botones'>
-                <a href="" className='primary-button'>Reservar ahora</a> <a href="" className='primary-button-border'>Ver todos los servicios</a>
+                <a href="" className='primary-button'>Reservar ahora</a> 
+                <a href="" className='primary-button-border'>Ver todos los servicios</a>
             </div>
 
           </div>
