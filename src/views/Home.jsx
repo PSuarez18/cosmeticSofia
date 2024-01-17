@@ -1,7 +1,8 @@
 import Footer from "../components/Footer/Footer";
-import NavBar from "../components/NavBar/NavBar";
+import SectionExperience from "../components/SectionLoopExperience/SectionExperience";
 import SectionPrincipal from "../components/SectionPrincipal/SectionPrincipal";
-
+import NavBar from "../components/NavBar/NavBar";
+import BannerComponent from "../components/BannerComponent/BannerComponent";
 
 function Home() {
     return (
@@ -11,7 +12,10 @@ function Home() {
 
             </header>
             <main>
-            <SectionPrincipal/>
+                {/* <BannerComponent/> */}
+                <SectionPrincipal/>
+                <SectionExperience/>
+                
             </main>
             <footer>
                 <Footer />

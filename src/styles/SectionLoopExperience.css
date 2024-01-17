@@ -1,0 +1,59 @@
+.section-loop-anim {
+    background-color: rgb(46, 43, 41);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.loop-anim-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sizing-loop {
+    display: flex;
+    align-items: center;
+    flex: none;
+    animation: carousel 100s linear infinite;
+}
+
+.loop-wrap-text {
+    align-items: center;
+    padding-right: 50px;
+    display: flex;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+._5 {
+    color: white;
+    margin-right: 15px;
+    font-size: 48px;
+    line-height: 2.5rem;
+}
+
+.text-loop {
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 48px;
+    line-height: 2.5rem;
+}
+
+/* Configuración de la animación del carrusel */
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
