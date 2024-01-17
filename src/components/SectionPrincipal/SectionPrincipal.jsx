@@ -17,16 +17,16 @@ const SectionPrincipal = () => {
 
           </div>
         </div>
-        <div class="carrusel-container">
-          <div class="carrusel">
+        <div className="carrusel-container">
+          <div className="carrusel">
             <div className='columnauno'>1</div>
-              <img src={imagen1} class="foto" alt="" />
+              <img src={imagen1} className="foto" alt="" />
             <div className='columnados'>3</div>
           </div>
-          <div class="indicadores">
-              <div class="indicador"></div>
-              <div class="indicador"></div>
-              <div class="indicador"></div>
+          <div className="indicadores">
+              <div className="indicador"></div>
+              <div className="indicador"></div>
+              <div className="indicador"></div>
           </div>
         </div>
     </div>
