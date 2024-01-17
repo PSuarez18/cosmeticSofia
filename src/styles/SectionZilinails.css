@@ -1,0 +1,220 @@
+.without-top-spacing {
+    padding-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .image-relative-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .image-relative-wrapper {
+        width: 75%;
+    }
+}
+
+.image-relative-wrapper img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    order: 0;
+    border-radius: 200px 40px 350px 205px;
+}
+
+.image-relative-wrapper {
+    width: 45%;
+    position: relative;
+}
+
+.button-wrap {
+    grid-column-gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+}
+
+.section.without-top-spacing {
+    overflow: hidden;
+}
+
+.primary-button-border:hover {
+    background-color: var(--text);
+    color: var(--white);
+}
+
+.primary-button-border {
+    border: 1px solid var(--text);
+    color: var(--text);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 35px;
+    align-items: center;
+    padding: 20px 40px;
+    font-weight: 700;
+    transition: all 0.8s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    opacity: 1;
+    color: var(--primary);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+.primary-button {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.8s;
+    display: inline-block;
+    line-height: 1.2em;
+    text-decoration: none;
+}
+
+
+
+
+.primary-button:active,
+.primary-button:hover {
+    outline: 0;
+}
+
+.content-right-wrapper {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+
+@media screen and (max-width: 991px) {
+    .content-right-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+    .button-wrap.center-tablet {
+        flex-direction: column !important;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button-wrap.center-tablet {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .button-wrap.center-tablet {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .button-wrap {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button-wrap {
+        grid-row-gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .section.without-top-spacing {
+        padding-top: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    .primary-button-border:hover {
+        opacity: 1;
+    }
+}
+
+.content-about-wrapper {
+    width: 100%;
+    grid-column-gap: 60px;
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    .content-about-wrapper {
+        grid-row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .content-about-wrapper {
+        grid-row-gap: 60px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content-right-wrapper h2 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .content-right-wrapper h2 {
+        font-size: 42px;
+    }
+}
+
+.content-right-wrapper h2 {
+
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.paragraph-large {
+    letter-spacing: 1px;
+    font-size: 22px;
+    line-height: 1.5em;
+    text-transform: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
