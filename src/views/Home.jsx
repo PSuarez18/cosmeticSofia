@@ -9,10 +9,12 @@ function Home() {
     return (
         <div className="home-page">
             <header>
-
+                <NavBar/>
 
             </header>
             <main>
+                {/* <BannerComponent/> */}
+                <SectionPrincipal/>
                 <SectionExperience/>
                 <SectionSkills/>
                 <SectionZillinails/>

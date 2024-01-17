@@ -1,0 +1,189 @@
+.section{
+    height: 100%;
+    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+    overflow: hidden; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas, una para la información y otra para el carrusel */
+    gap: 20px; /* Espacio entre las dos columnas */
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.informacion{
+    grid-column: 1;
+    text-align: start;
+    width: 100%;
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloqueInfo{
+    height: 80%;
+    width: 80%;
+    margin-top:10%;
+    margin-left:15%;
+}
+
+.informacion p{
+    margin-top:7%;
+    margin-left:1%;
+    font-size: 20px;
+    font-family: Nunito, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(85, 85, 85);
+}
+.informacion .botones {
+    margin-top:10%;
+}
+
+.informacion h1{
+    margin-bottom: 15px; /* Espacio entre cada elemento */
+    font-size: 55px;
+    font-family: Rufina, serif;
+}
+.botones {
+   
+    margin-top: 15%; /* Empuja el div de botones hacia la parte inferior de la columna */
+    margin-right: auto;
+    height: 110px;
+    width: 100%;
+}
+
+/* Estilo del botón */
+.boton {
+    display: inline-block;
+    align-items: center;
+    justify-content: center; 
+    text-decoration: none;
+    background-color:var(--primary);
+    color: #ffffff;
+    border-radius: 65px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 8%;
+    width: 180px; 
+    height: 60%;
+    width: 40%;
+}
+
+/* Estilo del botón al pasar el ratón (hover) */
+.boton:hover {
+    background-color: #7f194c;
+    color: #ffffff;
+}
+
+/* Estilo del botón al presionar (active) */
+.boton:active {
+    background-color: #1f618d;
+    
+}
+
+
+.otro-boton {
+    display: inline-block;
+    align-items: center; 
+    justify-content: center; 
+     text-decoration: none;
+    background-color:var(--secondary);
+    color: #ffffff;
+    border-radius: 75px;
+    transition: background-color 0.3s, color 0.3s;
+    height: 60%;
+    width: 50%;
+}
+
+
+
+/* Estilo del otro botón al pasar el ratón (hover) */
+.otro-boton:hover {
+    background-color:  #7f194c;
+    color: #ffffff;
+}
+
+/* Estilo del otro botón al presionar (active) */
+.otro-boton:active {
+    background-color: #922b21;
+    border-color: #922b21;
+}
+
+.span {
+    margin-top: 4%;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+}
+
+.carrusel-container {
+    display: grid;
+    grid-template-rows: 80% 1fr; /* Divide el contenedor en dos columnas, una para la información y otra para el carrusel */
+    margin-top: 12%;
+    height: 100%;
+    width: 100%;
+}
+
+
+.carrusel {
+    grid-row: 1; /* El carrusel ocupa la segunda columna */
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-content: center;
+    align-items: center;
+}
+.columnauno{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    grid-column: 1
+}
+.columnados{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3
+}
+.foto {
+    background-color: red;
+    grid-column: 2;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+.indicadores {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Ajusta el espacio entre los indicadores */
+    justify-content: center;
+    margin-top: 10px; /* Ajusta el espacio entre el carrusel y los indicadores */
+}
+
+.indicador {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(185, 185, 185);
+}
+
+/* Ajusta el color del indicador activo según tus preferencias */
+.indicador.activo {
+    background-color: rgb(9, 9, 9);
+}
+
+
+
+.fondo {
+  position: absolute;
+  top: 3%;
+  left: 55%;
+  width: 50%;
+  height: 100%;
+  z-index: 0; /* Asegura que el fondo de uñas esté detrás de la imagen1 */
+}
+

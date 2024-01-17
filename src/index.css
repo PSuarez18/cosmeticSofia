@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: rgb(251, 249, 249);
-    ---backgroundMain: rgb(10, 5, 7);
+    --backgroundMain: rgb(10, 5, 7);
     --primary: rgb(230, 118, 153);
     --secondary: rgb(102, 30, 53);
     --accent: rgb(242, 53, 113);
@@ -30,7 +30,8 @@
   font-family: "Poppins", "Noto Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Rufina', serif; 
   color-scheme: light dark;
   color: var(--text);
   background-color: var(--backgroundMain);
