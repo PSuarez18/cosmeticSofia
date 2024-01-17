@@ -30,12 +30,9 @@
   font-family: "Poppins", "Noto Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Rufina', serif; 
   color-scheme: light dark;
   color: var(--text);
   background-color: var(--backgroundMain);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

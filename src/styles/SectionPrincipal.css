@@ -1,6 +1,4 @@
-.section{
-    height: 100%;
-    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+.section2{
     overflow: hidden; 
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas, una para la información y otra para el carrusel */
@@ -22,146 +20,109 @@
 }
 
 .bloqueInfo{
-    height: 80%;
-    width: 80%;
     margin-top:10%;
     margin-left:15%;
+    margin-bottom: 55px;
 }
 
 .informacion p{
-    margin-top:7%;
+    margin-top:15px;
     margin-left:1%;
     font-size: 20px;
-    font-family: Nunito, sans-serif;
     letter-spacing: 1px;
     color: rgb(85, 85, 85);
 }
 .informacion .botones {
-    margin-top:10%;
+    margin-top:35px;
 }
 
 .informacion h1{
-    margin-bottom: 15px; /* Espacio entre cada elemento */
-    font-size: 55px;
-    font-family: Rufina, serif;
+    font-family: Poppins,"Noto Sans", ui-sans-serif;
+    margin-bottom: 1px; /* Espacio entre cada elemento */
+    font-size: 54px;
+    letter-spacing: -1px;
 }
 .botones {
-   
-    margin-top: 15%; /* Empuja el div de botones hacia la parte inferior de la columna */
     margin-right: auto;
     height: 110px;
     width: 100%;
+    
+}
+.botones a {
+    margin-right: 30px;
+    margin-top: 25px; /* Ajusta el espacio entre los dos enlaces según sea necesario */
 }
 
-/* Estilo del botón */
-.boton {
-    display: inline-block;
-    align-items: center;
-    justify-content: center; 
-    text-decoration: none;
-    background-color:var(--primary);
-    color: #ffffff;
-    border-radius: 65px;
-    transition: background-color 0.3s, color 0.3s;
-    margin-right: 8%;
-    width: 180px; 
-    height: 60%;
-    width: 40%;
-}
 
-/* Estilo del botón al pasar el ratón (hover) */
-.boton:hover {
-    background-color: #7f194c;
-    color: #ffffff;
-}
 
-/* Estilo del botón al presionar (active) */
-.boton:active {
-    background-color: #1f618d;
+
+.carrusel-container {
+    display: grid;
+    grid-template-rows: 100%; /* Divide el contenedor en dos columnas, una para la información y otra para el carrusel */
+    margin-top: 0;
     
 }
 
 
-.otro-boton {
-    display: inline-block;
-    align-items: center; 
-    justify-content: center; 
-     text-decoration: none;
-    background-color:var(--secondary);
-    color: #ffffff;
-    border-radius: 75px;
-    transition: background-color 0.3s, color 0.3s;
-    height: 60%;
-    width: 50%;
-}
-
-
-
-/* Estilo del otro botón al pasar el ratón (hover) */
-.otro-boton:hover {
-    background-color:  #7f194c;
-    color: #ffffff;
-}
-
-/* Estilo del otro botón al presionar (active) */
-.otro-boton:active {
-    background-color: #922b21;
-    border-color: #922b21;
-}
-
-.span {
-    margin-top: 4%;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    width: 100%;
-}
-
-.carrusel-container {
-    display: grid;
-    grid-template-rows: 80% 1fr; /* Divide el contenedor en dos columnas, una para la información y otra para el carrusel */
-    margin-top: 12%;
-    height: 100%;
-    width: 100%;
-}
-
-
 .carrusel {
-    grid-row: 1; /* El carrusel ocupa la segunda columna */
-    height: 100%;
-    width: 100%;
+    grid-row: 1;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 100%;
     justify-content: center;
-    align-items: center;
+    position: relative;
 }
-.columnauno{
+
+.columnaUno, .columnados {
     display: flex;
-   justify-content: center;
-   align-items: center;
-    grid-column: 1
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    background: none;
+    border: none;
+    transform: translateY(-50%); /* Alinea verticalmente al 50% */
 }
-.columnados{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 3
+
+.columnaUno {
+    left: 20%; /* Ajusta la posición de la flecha izquierda */
+    font-size: 30px;
 }
+
+.columnados {
+    right: 20%; /* Ajusta la posición de la flecha derecha */
+    font-size: 30px;
+}
+
+.icon {
+    background-color: rgba(0, 0, 0, 0.344);
+    padding: 0px;
+    border-radius: 50%;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.636);
+    color: #e5e5e5;
+}
+
 .foto {
-    background-color: red;
-    grid-column: 2;
-    height: 400px; /* Ajusta la altura según tus necesidades */
-    width: 100%; /* Ajusta el ancho según tus necesidades */
-    object-fit: cover;
-    border-radius: 25%;
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+    display: block; /* Quita el espacio adicional del inline-block */
+    height: 450px;
+    width: 450px;
+    border-radius: 2%;
+    z-index: 1;
+    position: relative;
 }
 
 .indicadores {
+    position: absolute; /* Añadido: establece posición absoluta para los indicadores */
+    bottom: 10px; /* Ajusta la posición vertical de los indicadores */
+    left: 50%; /* Centra los indicadores horizontalmente */
+    transform: translateX(-50%); 
     display: flex;
     flex-direction: row;
-    gap: 10px; /* Ajusta el espacio entre los indicadores */
-    justify-content: center;
-    margin-top: 10px; /* Ajusta el espacio entre el carrusel y los indicadores */
+    gap: 10px;
+    justify-content: center; /* Centra los indicadores horizontalmente */
+    align-items: flex-end; /* Coloca los indicadores en la parte inferior verticalmente */
+    margin-top: 10px;
+    z-index: 2;
 }
 
 .indicador {
@@ -171,19 +132,191 @@
     background-color: rgb(185, 185, 185);
 }
 
-/* Ajusta el color del indicador activo según tus preferencias */
 .indicador.activo {
     background-color: rgb(9, 9, 9);
 }
 
 
+/* Estilos específicos para escritorio */
+@media only screen and (min-width: 1024px) {
+    .bloqueInfo {
+        margin-top: 10%;
+        margin-left: 15%;
+        margin-bottom: 55px;
+    }
 
-.fondo {
-  position: absolute;
-  top: 3%;
-  left: 55%;
-  width: 50%;
-  height: 100%;
-  z-index: 0; /* Asegura que el fondo de uñas esté detrás de la imagen1 */
+    .informacion p {
+        margin-top: 15px;
+        margin-left: 1%;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: rgb(85, 85, 85);
+    }
+
+    .informacion .botones {
+        margin-top: 35px;
+    }
+
+    .informacion h1 {
+        font-family: Poppins, "Noto Sans", ui-sans-serif;
+        margin-bottom: 1px;
+        font-size: 54px;
+        letter-spacing: -1px;
+    }
+
+    .botones {
+        margin-right: auto;
+        height: 110px;
+        width: 100%;
+    }
+
+    .botones a {
+        margin-right: 30px;
+        margin-top: 25px;
+    }
+
+    .carrusel-container {
+        margin-top: 0;
+    }
+
+    .carrusel {
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        position: relative;
+    }
+
+    .columnaUno {
+        left: 20%;
+        font-size: 30px;
+    }
+
+    .columnados {
+        right: 20%;
+        font-size: 30px;
+    }
+
+    .icon {
+        background-color: rgba(0, 0, 0, 0.344);
+        padding: 0px;
+        border-radius: 50%;
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.636);
+        color: #e5e5e5;
+    }
 }
 
+/* Estilos para tablet */
+@media only screen and (max-width: 1023px) {
+    .section2 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en tablet */
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 20px;
+    }
+
+    .bloqueInfo {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+
+    .informacion{
+        margin-bottom: 25px;
+    }
+
+    .informacion h1 {
+        font-size: 45px;
+        text-align: center; /* Alinea el texto al centro horizontalmente */
+        margin-right: 30px;
+        align-items: center;
+    }
+
+    .informacion p {
+        font-size: 24px;
+        text-align: center; /* Alinea el texto al centro horizontalmente */
+        margin-right: 30px;
+        align-items: center;
+        
+        margin-top: 25px;
+    }
+
+    .botones {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column; /* Muestra los elementos uno debajo del otro */
+        align-items: center; /* Alinea los elementos en el centro horizontal */
+    }
+    
+    
+    .foto {
+        height: 468px;
+        width: 468px;
+    }
+}
+
+/* Estilos para celular */
+@media only screen and (max-width: 767px) {
+.section2{
+   
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+    .carrusel-container {
+        grid-row: 2; /* Mueve el carrusel debajo del contenido para celular */
+        
+    }
+
+    
+
+    .informacion h1{
+        
+        text-align: center; /* Alinea el texto al centro horizontalmente */
+        margin-right: 20px;
+        align-items: center;
+    }
+    .informacion p {
+       
+        text-align: center; /* Alinea el texto al centro horizontalmente */
+        margin-right: 20px;
+        align-items: center;
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    
+    .carrusel {
+        
+        width: 100%; /* Ocupa el ancho completo en celular */
+    }
+    
+    .botones {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column; /* Muestra los elementos uno debajo del otro */
+        align-items: center; /* Alinea los elementos en el centro horizontal */
+    }
+    
+    
+    .columnaUno,
+    .columnados {
+        
+        font-size: 24px; /* Reduce el tamaño de los botones en celular */
+    }
+
+    .columnaUno {
+        left: 2%; /* Ajusta la posición de la flecha izquierda */
+        
+    }
+    
+    .columnados {
+        right: 2%; /* Ajusta la posición de la flecha derecha */
+        
+    }
+    
+    .foto {
+        margin-top: 0px;
+        height: 400px;
+        width: 100%;
+    }
+    
+}

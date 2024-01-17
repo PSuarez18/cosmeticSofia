@@ -3,6 +3,8 @@ import SectionAppointment from "../components/SectionAppointment/SectionAppointm
 import SectionExperience from "../components/SectionLoopExperience/SectionExperience";
 import SectionSkills from "../components/SectionSkills/SectionSkills";
 import SectionZillinails from "../components/SectionZillinails/SectionInfoZilinail";
+import NavBar from "../components/NavBar/NavBar"
+import SectionPrincipal from "../components/SectionPrincipal/SectionPrincipal";
 
 
 function Home() {
@@ -13,7 +15,7 @@ function Home() {
 
             </header>
             <main>
-                {/* <BannerComponent/> */}
+               
                 <SectionPrincipal/>
                 <SectionExperience/>
                 <SectionSkills/>
