@@ -1,10 +1,11 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0.086);
+  background-color: var(--formBackground);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   padding: 16px 8px;
+  
 }
 .container-logoNails img {
   width: 34px;
@@ -60,7 +61,7 @@
     gap: auto;
   }
   .container-logoMarket img {
-    height: 35px; 
+    height: 49px; 
   }
   .container-logoNails img {
     width: 28px;
@@ -70,5 +71,38 @@
   .navbar-item {
     margin: 4px 15px;
     gap: auto;
+  }
+}
+
+
+/* Estilos para el icono del menú */
+.menu-icon {
+  display: none; /* Inicialmente oculto en pantallas más grandes */
+  cursor: pointer;
+  
+}
+
+.menu-icon img {
+  display: block;
+  width: 40px;
+  height: 65px;
+  transition: 0.4s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    padding: 2px;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  /* Mostrar la lista de navegación cuando el menú está abierto */
+  .navbar-list.active {
+    display: flex;
+    flex-direction: column;
   }
 }
