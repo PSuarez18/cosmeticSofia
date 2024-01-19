@@ -164,14 +164,14 @@
     }
 
     .botones {
-        margin-right: auto;
         height: 110px;
         width: 100%;
+        text-align: center;
+
     }
 
     .botones a {
-        margin-right: 30px;
-        margin-top: 25px;
+       margin: 4px;
     }
 
     .carrusel-container {
@@ -227,7 +227,7 @@
 
     .bloqueInfo {
         margin-top: 5%;
-        margin-left: 5%;
+        margin-left: 0;
         margin-bottom: 20px;
     }
 
@@ -238,7 +238,6 @@
     .informacion h1 {
         font-size: 45px;
         text-align: center; /* Alinea el texto al centro horizontalmente */
-        margin-right: 30px;
         align-items: center;
     }
 
@@ -247,21 +246,26 @@
         text-align: center; /* Alinea el texto al centro horizontalmente */
         margin-right: 30px;
         align-items: center;
-        
         margin-top: 25px;
     }
 
     .botones {
-        margin-top: 0;
+        margin: auto;
         display: flex;
         flex-direction: column; /* Muestra los elementos uno debajo del otro */
         align-items: center; /* Alinea los elementos en el centro horizontal */
+        justify-content: baseline;
+        font-size: 0.7rem;
+    }
+    .botones a {
+        font-size: 0.8rem;
+        margin: 10px;
     }
     
     
     .foto {
-        height: 468px;
-        width: 468px;
+        height: 80%;
+        width: 60%;
     }
 }
 
@@ -327,8 +331,8 @@
     
     .foto {
         margin-top: 0px;
-        width: 80%;    
-        height: 80%;    
+        width: 85%;    
+        height: 85%;    
     }
     
 }
