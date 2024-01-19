@@ -12,7 +12,7 @@ const MenuDrop = ({ menuOpen }) => {
                         <Link to="/servicio1">Inicio</Link>
                     </li>
                     <li>
-                        <Link to="/servicio2">Servicios</Link>
+                        <Link to="/servicios">Servicios</Link>
                     </li>
                     <li>
                         <Link to="/servicio2">Cursos</Link>
