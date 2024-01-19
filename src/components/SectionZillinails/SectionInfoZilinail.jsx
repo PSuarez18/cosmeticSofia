@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import imgSectionSillinails from "../../assets/images/sofiaZilliNails.jpg"
 import "../../styles/SectionZilinails.css";
 
 const SectionZillinails = () => {
@@ -8,7 +9,7 @@ const SectionZillinails = () => {
                 <div className="content-about-wrapper">
                     <div className="image-relative-wrapper">
                         <img
-                            src="src\assets\images\sofiaZilliNails.jpg"
+                            src= {imgSectionSillinails}
                             loading="lazy"
                             alt="SofiaZilliNails"
                         />

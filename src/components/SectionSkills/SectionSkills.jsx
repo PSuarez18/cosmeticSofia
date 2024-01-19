@@ -4,7 +4,7 @@ const SectionSkills = () => {
         <div>
             <section className="section">
                 <div className="w-layout-blockcontainer base-container w-container">
-                    <div className="w-layout-grid about-numbers-wrap" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>
+                    <div className="w-layout-grid about-numbers-wrap" >
                         <div className="about-wrap">
                             <div className="big-numbers">50+</div>
                             <div className="about-numbers">Diseños de Uñas</div>
