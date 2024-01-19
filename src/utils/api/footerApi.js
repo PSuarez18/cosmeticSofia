@@ -1,7 +1,8 @@
+import whatsappIcon from "../../assets/images/whatsapp.png"
 const socialIcons = {
     whatsapp: {
         api: "https://wa.me/+5493873641509",
-        icon: "src/assets/images/whatsapp.png",
+        icon: whatsappIcon,
     },
     facebook: {
         api: "https://www.facebook.com/search/top?q=exchange%20divisas",
