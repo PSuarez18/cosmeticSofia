@@ -2,11 +2,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/MenuNavBarDrop.css';
+import nailsLogo from "../../assets/images/nailsLogo.png"
 
 const MenuDrop = ({ menuOpen }) => {
     return (
         <div className='menu-main-drop'>
             <div className={`menu-drop-container ${menuOpen ? 'show' : ''}`}>
+                <div className="imgContainerLogo">
+                    <img className="nailsLogoMenu" src={nailsLogo} alt="" />
+                </div>
                 <ul className={`menu-drop-list ${menuOpen ? 'show' : ''}`}>
                     <li>
                         <Link to="/servicio1">Inicio</Link>

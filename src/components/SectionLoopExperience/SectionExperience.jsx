@@ -24,12 +24,12 @@ const SectionExperience = () => {
                             <div className="loop-wrap-text">
                                 <div className="circle"></div>
                                 <div className="_5">5+</div>
-                                <div className="text-loop">YEARS OF EXPERIENCE</div>
+                                <div className="text-loop">AÑOS DE EXPERIENCIA</div>
                             </div>
                             <div  className="loop-wrap-text">
                                 <div className="circle"></div>
                                 <div className="_5">5+</div>
-                                <div className="text-loop">YEARS OF EXPERIENCE</div>
+                                <div className="text-loop">AÑOS DE EXPERIENCIA</div>
                             </div>
                         </div>
                     </div>

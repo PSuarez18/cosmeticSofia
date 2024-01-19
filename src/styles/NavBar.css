@@ -1,24 +1,28 @@
 .navbar {
-  background-color: var(--formBackground);
+  background: var(--navbarBackground);
+
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   padding: 16px 8px;
-  
+
 }
+
 .container-logoNails img {
   width: 34px;
 }
+
 .container-logoNails {
   padding-left: 20px;
 }
+
 .navbar-list {
   list-style: none;
   padding: 16px;
   margin: 8px;
   display: flex;
-  justify-content:space-between
+  justify-content: space-between
 }
 
 .navbar-item {
@@ -45,28 +49,35 @@
 .navbar-link:hover {
   color: #555;
 }
+
 .container-logoMarket {
   padding: 0px 20px;
 }
+
 .container-logoMarket img {
-  height: 50px; 
+  height: 50px;
 }
+
 .container-logoMarket img:hover {
   transform: scale(1.1);
   transition: all 0.4s;
 }
+
 @media screen and (max-width: 970px) {
   .navbar-item {
     margin: 4px 25px;
     gap: auto;
   }
+
   .container-logoMarket img {
-    height: 49px; 
+    height: 49px;
   }
+
   .container-logoNails img {
     width: 28px;
   }
 }
+
 @media screen and (max-width: 700px) {
   .navbar-item {
     margin: 4px 15px;
@@ -77,9 +88,10 @@
 
 /* Estilos para el icono del menú */
 .menu-icon {
-  display: none; /* Inicialmente oculto en pantallas más grandes */
+  display: none;
+  /* Inicialmente oculto en pantallas más grandes */
   cursor: pointer;
-  
+
 }
 
 .menu-icon img {
@@ -104,5 +116,20 @@
   .navbar-list.active {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    padding: 4px;
+  }
+
+  .navbar-link {
+    font-size: 1.35rem;
+  }
+
+  .navbar-link:hover {
+    color: black;
+    transition: all 0.8s;
   }
 }
