@@ -63,3 +63,9 @@
 .footer-column hr {
     margin: 16px;
   }
+
+  @media screen and (max-width: 560px) {
+    .footer-nav {
+        flex-flow: column wrap;
+    }
+}

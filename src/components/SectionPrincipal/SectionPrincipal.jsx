@@ -35,15 +35,33 @@ const SectionPrincipal = () => {
 
   return (
     <div className='section2'>
-        <div className='informacion'>
-          <div className='bloqueInfo'>
-            <h1>Las Mejores Uñas Para Los Mejores Momentos</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, tempore quas delectus pariatur eveniet totam ex aut unde corrupti!</p>
-            <div className='botones'>
-                <a href="" className='primary-button'>Reservar ahora</a> 
-                <a href="" className='primary-button-border'>Ver todos los servicios</a>
-            </div>
+      <div className='informacion'>
+        <div className='bloqueInfo'>
+          <h1>Las Mejores Uñas Para Los Mejores Momentos</h1>
+          <p>Deja que tus uñas cuenten la historia de tu estilo con nosotros.
+            Cada trazo es una firma de sofisticación.</p>
+          <div className='botones'>
+            <a href="" className='primary-button'>Reservar ahora</a>
+            <a href="" className='primary-button-border'>Ver todos los servicios</a>
+          </div>
 
+        </div>
+      </div>
+      <div className="carrusel-container">
+        <div className="carrusel">
+
+          <button className='columnaUno' onClick={handlePrev} aria-label="Anterior" ><FontAwesomeIcon icon={faCircleChevronLeft} className='icon' /></button>
+
+          <img src={images[currentImage]} className="foto" alt={`imagen ${currentImage + 1}`} />
+
+          <button className='columnados' onClick={handleNext} aria-label="Siguiente"> <FontAwesomeIcon icon={faCircleChevronRight} className='icon' /></button>
+          <div className="indicadores">
+            {images.map((_, index) => (
+              <div key={index} className={`indicador ${index === currentImage ? 'activo' : ''}`}></div>
+            ))}
+          </div>
+        </div>
+      </div>
         </div>
         <div className="carrusel-container">
           <div className="carrusel">
@@ -67,7 +85,7 @@ const SectionPrincipal = () => {
         </div>
       </div>
     </div>
-   
+
   )
 }
 

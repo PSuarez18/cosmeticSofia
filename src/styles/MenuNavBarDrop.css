@@ -1,0 +1,79 @@
+.menu-main-drop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.menu-drop-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.938); 
+    backdrop-filter: blur(8px); 
+    padding: 0px 0px 0px 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .menu-drop-container.show {
+    transform: translateX(0);
+  }
+  
+  .menu-drop-list {
+    list-style-type: none;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .menu-drop-list.show {
+    opacity: 1; 
+  }
+  
+  .menu-drop-list li {
+   margin: 10px 0px 30px 10px;
+  }
+  
+  .menu-drop-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 601px) {
+    .menu-main-drop{
+        display: none;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    .menu-drop-container {
+      background-color: rgba(15, 14, 14, 0.985);
+      font-size: 1.4rem;
+    }
+    .menu-drop-list li {
+      padding-left: 8px;
+    }
+    .menu-drop-list{
+      padding: 0;
+      margin: 0;
+    }
+    .menu-drop-container {
+      padding: 0;
+    }
+  }
+  .nailsLogoMenu {
+    height: 60px;
+  }
+
+  .imgContainerLogo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid white;
+  }

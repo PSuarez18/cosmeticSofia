@@ -49,7 +49,7 @@
 
 .primary-button-border:hover {
     background-color: var(--text);
-    color: var(--white);
+    color: black;
 }
 
 .primary-button-border {
