@@ -20,7 +20,7 @@ const SectionPrincipal = () => {
     imagen4,
     imagen1,
     imagen3,
-    // Agrega más nombres de imágenes según sea necesario
+  
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -60,28 +60,6 @@ const SectionPrincipal = () => {
               <div key={index} className={`indicador ${index === currentImage ? 'activo' : ''}`}></div>
             ))}
           </div>
-        </div>
-      </div>
-        </div>
-        <div className="carrusel-container">
-          <div className="carrusel">
-            
-              <button className='columnaUno' onClick={handlePrev} aria-label="Anterior" ><FontAwesomeIcon icon={faCircleChevronLeft} className='icon' /></button>
-              
-              <img src={images[currentImage]} className="foto" alt={`imagen ${currentImage + 1}`} />
-            
-              <button className='columnados' onClick={handleNext} aria-label="Siguiente"> <FontAwesomeIcon icon={faCircleChevronRight} className='icon' /></button>
-              <div className="indicadores"> 
-                  {images.map((_, index) => (
-                    <div key={index} className={`indicador ${index === currentImage ? 'activo' : ''}`}></div>
-                  ))}
-              </div>
-          </div>
-        </div>
-        <div className="indicadores">
-          <div className="indicador"></div>
-          <div className="indicador"></div>
-          <div className="indicador"></div>
         </div>
       </div>
     </div>

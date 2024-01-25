@@ -1,0 +1,86 @@
+.containerContactMain {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px;
+}
+.containerContactMain h4 {
+    font-size: 1.8rem;
+    color: var(--text);
+}
+
+.containerContactMain section {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: var(--formBackground);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    gap: 1rem;
+}
+
+.container-contactText {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.container-contactText p {
+    width: fit-content;
+}
+
+.container-cellContact,
+.container-locationContact {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.05rem;
+}
+
+
+.container-locationContact img,
+.container-cellContact img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.container-cellContact a {
+    display: block;
+    color: #007bff;
+    /* Cambia el color del enlace según tus preferencias */
+    text-decoration: none;
+}
+
+.container-cellContact a:hover {
+    color: var(--primary);
+}
+
+@media screen and (max-width:990px) {
+    .containerContactMain  section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .container-cellContact,
+    .container-locationContact{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 16px;
+    }
+    .container-cellContact p,
+    .container-locationContact p{
+        margin: 2px;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .containerContactMain section {
+        background-color: rgb(174, 45, 155);
+        border: none;
+        box-shadow: 0px 0px 2px  white;
+    }
+}
