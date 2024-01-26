@@ -25,6 +25,7 @@
     --formBackground: rgba(225, 9, 214, 0.656);
     --sectionLoopBackground: rgba( 140, 16, 119);
     --navbarBackground: linear-gradient(to bottom,  rgb(255, 58, 245), rgba(255, 58, 245, 0.491) , rgba(245, 26, 234, 0.861));
+    --borderGradientContact: linear-gradient(45deg, var(--primary), var(--text), var(--sectionLoopBackground));
   }
 }
 

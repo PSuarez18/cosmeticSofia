@@ -69,3 +69,8 @@
         flex-flow: column wrap;
     }
 }
+@media (prefers-color-scheme: dark) {
+    .image-invert {
+        filter: invert(100%);
+    }
+}

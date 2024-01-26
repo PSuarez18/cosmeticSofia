@@ -32,10 +32,10 @@ const Footer = () => {
                             <img src={socialIcons.facebook.icon} alt="iconFacebook" className="imgbig"/>
                         </a>
                         <a href={socialIcons.email.api} target="_blank" rel="nofollow">
-                            <img src={socialIcons.email.icon} alt="iconEmail" />
+                            <img src={socialIcons.email.icon} alt="iconEmail" className="image-invert" />
                         </a>
                         <a href={socialIcons.instagram.api} target="_blank" rel="nofollow">
-                            <img src={socialIcons.instagram.icon} alt="iconEmail" />
+                            <img src={socialIcons.instagram.icon} alt="iconEmail"  />
                         </a>
                     </section>
                 </div>

@@ -3,6 +3,7 @@ import '../../styles/Opinions.css';
 import comillas from '../../assets/images/comillas.png';
 import user from '../../assets/images/user.jpg';
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-router-dom';
 
 const Opinions = () => {
   const opinionsData = [
@@ -64,7 +65,7 @@ const Opinions = () => {
               Escucha Lo Que Nuestras Clientes Tienen Que Decir
             </h2>
             <div className='botonOpinion'>
-              <button className='primary-button'>Contactanos</button>
+              <Link to="/contacto"><button className='primary-button'>Contactanos</button></Link>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Home from "../views/Home";
 import Services from "../views/Services";
 import NavBar from "../components/NavBar/NavBar";
 import Contact from "../views/Contact";
+import Footer from "../components/Footer/Footer";
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
         <Route path="/servicio2" element={<Services/>}/>
         <Route path="/contacto" element={<Contact/>}/>
       </Routes>
+      <Footer />
     </Router>
   );
 };

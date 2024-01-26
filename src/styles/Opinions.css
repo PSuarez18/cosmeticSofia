@@ -112,6 +112,10 @@
     margin: 0;
     font-size: 16px;
 }
+.primary-button  {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* Media queries para dispositivos móviles y tabletas */
 
