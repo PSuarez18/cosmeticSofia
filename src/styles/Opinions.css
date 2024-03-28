@@ -2,6 +2,9 @@
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.contact-link {
+    color: var(--white) ;
+}
 
 .contenedor-opiniones{
     display: grid;

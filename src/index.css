@@ -28,11 +28,38 @@
     --borderGradientContact: linear-gradient(45deg, var(--primary), var(--text), var(--sectionLoopBackground));
   }
 }
-
+.light-mode {
+  :root {
+    --text: rgb(7, 4, 5);
+    --backgroundMain: rgb(250, 245, 247);
+    --primary: rgb(192, 86, 120);
+    --secondary: rgb(224, 152, 175);
+    --accent: rgb(219, 106, 142);
+    --backgroundfooter: rgba(15, 23, 33, 0.05);
+    --white: white;
+    --sectionLoopBackground: rgb(46, 43, 41);
+    --formBackground: hsl(341, 55%, 74%, 10%);
+    --navbarBackground:  hsl(341, 55%, 74%, 10%)
+  }
+}
+.dark-mode {
+  :root {
+    --text: rgb(251, 249, 249);
+    --backgroundMain: rgb(10, 5, 7);
+    --primary:  rgba(225, 9, 214, 0.656);
+    --secondary: rgb(102, 30, 53);
+    --accent: rgba(64, 40, 47, 0.567);
+    --backgroundfooter: hsl(218, 35%, 94%, 5%);
+    --formBackground: rgba(225, 9, 214, 0.656);
+    --sectionLoopBackground: rgba( 140, 16, 119);
+    --navbarBackground: linear-gradient(to bottom,  rgb(255, 58, 245), rgba(255, 58, 245, 0.491) , rgba(245, 26, 234, 0.861));
+    --borderGradientContact: linear-gradient(45deg, var(--primary), var(--text), var(--sectionLoopBackground));
+  }
+}
 
 
 :root {
-  font-family: "Poppins", "Noto Sans", sans-serif;
+ 
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -47,7 +74,7 @@
 * {
   box-sizing: border-box;
   scroll-padding-top: 3em;
-  font-family: 'Poppins', "Noto Sans", ui-sans-serif;
+  font-family: "Poppins", "Noto Sans", sans-serif;
 }
 
 /* Personalizar la barra de desplazamiento */

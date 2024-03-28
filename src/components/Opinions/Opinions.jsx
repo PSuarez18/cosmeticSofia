@@ -10,7 +10,7 @@ const Opinions = () => {
     {
       id: 1,
       content: "¡Absolutamente impresionante! La artesanía en las uñas está más allá de la imaginación. Me sentí como una reina con mi nuevo juego de uñas. La atención al detalle es inigualable. ¡No puedo esperar para presumirlas!",
-      author: "Isabella Smith",
+      author: "",
     },
 
     {
@@ -44,7 +44,7 @@ const Opinions = () => {
         nextSlide();
         setActivateTransition(true);
       }, 1000); // Ajusta el tiempo según sea necesario
-    }, 9000);
+    }, 6000);
 
     return () => {
       clearInterval(intervalId);
@@ -65,7 +65,7 @@ const Opinions = () => {
               Escucha Lo Que Nuestras Clientes Tienen Que Decir
             </h2>
             <div className='botonOpinion'>
-              <Link to="/contacto"><button className='primary-button'>Contactanos</button></Link>
+              <Link to="/contacto" className='contact-link'><button className='primary-button'>Contactanos</button></Link>
             </div>
           </div>
         </div>

@@ -1,0 +1,51 @@
+.titleAboutMe {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+.containerAboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 8rem;
+}
+.container-about-img {
+    text-align: center;
+}
+.container-about-img img {
+    margin: 4px;
+    padding: 8px;
+    border-radius: 25px;
+   
+}
+.containerAboutMe p {
+    line-height: 2;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 8px;
+    padding: 16px;
+}
+.containerAboutMe p, .container-about-img {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+@media screen and ( min-width: 1025px){
+    .containerAboutMe {
+        margin-bottom: 10rem;
+    }
+}
+@media screen and ( max-width: 1024px) {
+    .containerAboutMe {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+        
+    }
+    .container-about-img img {
+        width: 100%;
+        height: auto;
+    }    
+}

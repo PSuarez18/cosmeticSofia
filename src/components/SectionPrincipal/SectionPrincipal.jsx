@@ -41,8 +41,8 @@ const SectionPrincipal = () => {
           <p>Deja que tus uñas cuenten la historia de tu estilo con nosotros.
             Cada trazo es una firma de sofisticación.</p>
           <div className='botones'>
-            <a href="" className='primary-button'>Reservar ahora</a>
-            <a href="" className='primary-button-border'>Ver todos los servicios</a>
+            <a href="/contacto" className='primary-button'>Reservar ahora</a>
+            <a href="/servicios" className='primary-button-border'>Ver todos los servicios</a>
           </div>
 
         </div>
